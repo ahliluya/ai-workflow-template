@@ -6,11 +6,11 @@ BACKUP_DIR="$HOME/AI_WORKSPACE/backups"
 TMP_DIR="/tmp/AI_WORKSPACE_backup_check"
 
 shopt -s nullglob
-BACKUPS=("$BACKUP_DIR"/AI_WORKSPACE_v0.1.6_clean_*.tar.gz)
+BACKUPS=("$BACKUP_DIR"/AI_WORKSPACE_v0.2.0_clean_*.tar.gz)
 shopt -u nullglob
 
 if (( ${#BACKUPS[@]} == 0 )); then
-    echo "Error: no v0.1.6 clean backup found in $BACKUP_DIR." >&2
+    echo "Error: no v0.2.0 clean backup found in $BACKUP_DIR." >&2
     exit 1
 fi
 
@@ -30,7 +30,7 @@ rm -rf -- "$TMP_DIR"
 mkdir -p -- "$TMP_DIR"
 
 echo
-echo "## 1. Extract selected v0.1.6 clean backup"
+echo "## 1. Extract selected v0.2.0 clean backup"
 tar -xzf "$LATEST_BACKUP" -C "$TMP_DIR"
 
 DIFF_FOUND=0
@@ -97,6 +97,33 @@ compare_file 11 "system-guide.md" \
     "$HOME/AI_WORKSPACE/docs/system-guide.md" \
     "$TMP_DIR/AI_WORKSPACE/docs/system-guide.md"
 
+compare_file 12 "agent_bridge/README.md" \
+    "$HOME/AI_WORKSPACE/agent_bridge/README.md" \
+    "$TMP_DIR/AI_WORKSPACE/agent_bridge/README.md"
+
+compare_file 13 "agent_bridge/task-template.md" \
+    "$HOME/AI_WORKSPACE/agent_bridge/task-template.md" \
+    "$TMP_DIR/AI_WORKSPACE/agent_bridge/task-template.md"
+
+compare_file 14 "agent_bridge/result-template.md" \
+    "$HOME/AI_WORKSPACE/agent_bridge/result-template.md" \
+    "$TMP_DIR/AI_WORKSPACE/agent_bridge/result-template.md"
+
+compare_file 15 "agent_bridge/review-template.md" \
+    "$HOME/AI_WORKSPACE/agent_bridge/review-template.md" \
+    "$TMP_DIR/AI_WORKSPACE/agent_bridge/review-template.md"
+
+compare_file 16 "agent_bridge/safety-policy.md" \
+    "$HOME/AI_WORKSPACE/agent_bridge/safety-policy.md" \
+    "$TMP_DIR/AI_WORKSPACE/agent_bridge/safety-policy.md"
+
+compare_file 17 "agent_bridge/cost-policy.md" \
+    "$HOME/AI_WORKSPACE/agent_bridge/cost-policy.md" \
+    "$TMP_DIR/AI_WORKSPACE/agent_bridge/cost-policy.md"
+
+compare_file 18 "agent_bridge/execution-policy.md" \
+    "$HOME/AI_WORKSPACE/agent_bridge/execution-policy.md" \
+    "$TMP_DIR/AI_WORKSPACE/agent_bridge/execution-policy.md"
 echo
 echo "===== COMPARE COMPLETE ====="
 
