@@ -245,6 +245,13 @@ If unsure, ask the user to send the diff to ChatGPT for interpretation.
 
 When adding or changing workflows, update documentation.
 
+### Documentation & Naming Rules / 文档与命名规则
+
+- Use English-first filenames.
+- Use bilingual titles: English / 中文.
+- Keep public-facing docs clear, searchable, and privacy-safe.
+- Do not expose private memory, backups, logs, paths, credentials, or account data.
+
 Main docs:
 
 ~/AI_WORKSPACE/docs/COMMANDS.md  
@@ -389,13 +396,14 @@ When the user asks you to work on AI_WORKSPACE, start with:
 
 Current version:
 
-v0.1.5-agents-md-patch
+v0.1.6-git-baseline-docs-polish
 
 Patch context:
 
 - AGENTS.md was added and verified at the project root.
 - Codex should automatically read AGENTS.md when started in ~/AI_WORKSPACE.
 - Current and future clean backups use the AI_WORKSPACE_v0.1.5_clean naming prefix.
+- v0.1.6 adds bilingual documentation, searchable naming, GitHub readiness, and public-template preparation.
 
 Core commands:
 

@@ -8,7 +8,7 @@ AI_WORKSPACE is a local-first personal AI memory and backup system.
 
 Current version:
 
-v0.1.5-agents-md-patch
+v0.1.6-git-baseline-docs-polish
 
 ## Required First Step
 
@@ -51,6 +51,13 @@ Do not modify system directories such as:
 Do not install packages or run internet scripts unless explicitly approved.
 
 Do not change cron, shell startup files, network, VPN, proxy, DNS, or firewall settings unless explicitly approved.
+
+## Documentation & Naming Rules / 文档与命名规则
+
+- Use English-first filenames.
+- Use bilingual titles: English / 中文.
+- Keep public-facing docs clear, searchable, and privacy-safe.
+- Do not expose private memory, backups, logs, paths, credentials, or account data.
 
 ## Required Workflow
 
