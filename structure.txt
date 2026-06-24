@@ -1,0 +1,25 @@
+AI_WORKSPACE Public Template / AI_WORKSPACE 公开模板
+
+public_template/
+├── .gitignore                         # Privacy exclusions / 隐私排除规则
+├── LICENSE                            # MIT License / MIT 许可证
+├── README.md                          # Main guide / 主要指南
+├── README_PUBLIC.md                   # Compact overview / 简洁概览
+├── structure.txt                      # This public-only map / 本公开目录图
+├── agent_bridge/
+│   ├── README.md                      # Agent Bridge overview / Agent 桥接概览
+│   ├── task-template.md               # Task input / 任务输入
+│   ├── result-template.md             # Execution result / 执行结果
+│   ├── review-template.md             # Review checklist / 审查清单
+│   ├── safety-policy.md               # Safety defaults / 安全默认值
+│   ├── cost-policy.md                 # Cost boundaries / 成本边界
+│   └── execution-policy.md            # Execution sequence / 执行顺序
+├── docs/
+│   ├── getting-started.md             # Beginner guide / 初学者指南
+│   ├── structure.md                   # Structure details / 结构说明
+│   └── faq.md                         # Questions and answers / 常见问题
+└── examples/
+    ├── example-task.md                # Safe task example / 安全任务示例
+    └── example-result.md              # Safe result example / 安全结果示例
+
+Only the public template is shown. Private workspace content is excluded. / 仅展示公开模板，私人工作区内容已排除。
