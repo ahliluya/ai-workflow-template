@@ -1,0 +1,25 @@
+# Private data and generated state / 私人数据与生成状态
+memory/
+inbox/
+outbox/
+backups/
+archive/
+chat_logs/
+sync_engine/logs/
+sync_engine/state/
+
+# Archives and checksums / 归档与校验文件
+*.tar.gz
+*.sha256
+
+# Secrets and credentials / 密钥与凭据
+.env
+*.token
+*.key
+*.pem
+
+# Logs and generated files / 日志与生成文件
+*.log
+__pycache__/
+*.pyc
+.DS_Store
