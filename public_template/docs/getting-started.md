@@ -1,27 +1,21 @@
 # Getting Started / 入门指南
 
-This guide shows a simple, reviewable workflow for beginners. / 本指南为初学者介绍一个简单、可审查的工作流。
+## 1. Copy the template / 复制模板
 
-## 1. Clone or copy the template / 克隆或复制模板
+Copy these files into a new project or clone the repository. Keep personal data outside Git. / 将文件复制到新项目或克隆仓库，并把个人数据保存在 Git 之外。
 
-Clone the future public repository, or copy this template into a new project directory. Keep personal data outside the repository. / 克隆未来的公开仓库，或把本模板复制到新的项目目录。个人数据应保存在仓库之外。
+## 2. Define one task / 定义一个任务
 
-## 2. Write a task / 编写任务
+Copy `agent_bridge/task-template.md`. Set the goal, allowed files, constraints, checks, and stop conditions. / 复制 `agent_bridge/task-template.md`，填写目标、允许文件、约束、检查和停止条件。
 
-Copy `agent_bridge/task-template.md`. State one clear goal, the allowed files, forbidden actions, verification checks, and stop conditions. / 复制 `agent_bridge/task-template.md`，写明一个清晰目标、允许修改的文件、禁止事项、验证检查和停止条件。
+## 3. Review the plan / 审查计划
 
-## 3. Ask ChatGPT to refine it / 请 ChatGPT 完善任务
+Use a person or planning tool to remove ambiguity and confirm risk boundaries. Do not share secrets. / 由人员或规划工具消除歧义并确认风险边界，不要共享秘密。
 
-Ask ChatGPT to review the goal, scope, risks, and success criteria. Do not provide secrets or private data. / 请 ChatGPT 审查目标、范围、风险和成功标准。不要提供密钥或私人数据。
+## 4. Execute locally / 在本地执行
 
-## 4. Let Codex execute locally / 让 Codex 在本地执行
+Use an approved local tool to inspect, edit only in scope, verify, and complete `result-template.md`. / 使用已批准的本地工具检查、仅在范围内编辑、验证，并填写 `result-template.md`。
 
-Give Codex the approved task. Codex should inspect first, state its plan, modify only approved files, verify the result, and use the result template. / 将已批准任务交给 Codex。Codex 应先检查并说明计划，只修改已批准文件，验证结果，并使用结果模板报告。
+## 5. Review and commit / 审查并提交
 
-## 5. Review the result / 审查结果
-
-Use `agent_bridge/review-template.md`. Check scope, sensitive files, verification evidence, risks, and Git status. / 使用 `agent_bridge/review-template.md`，检查范围、敏感文件、验证证据、风险和 Git 状态。
-
-## 6. Commit safely / 安全提交
-
-Review the diff and staged files before committing. Never commit credentials, private memory, logs, backups, or personal data. / 提交前审查差异和暂存文件。绝不要提交凭据、私人记忆、日志、备份或个人数据。
+Use `review-template.md`, inspect the diff and Git status, then commit only approved files. / 使用 `review-template.md`，检查差异和 Git 状态，仅提交已批准文件。

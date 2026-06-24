@@ -1,20 +1,12 @@
-# Agent Bridge Lite / 轻量级 Agent 桥接层
+# Agent Bridge / 智能体桥接
 
-Agent Bridge Lite is a document-based workflow for coordinating a User, ChatGPT, and Codex without autonomous agents or API automation. / Agent Bridge Lite 是一种基于文档的工作流，用于协调用户、ChatGPT 与 Codex，不使用自主智能体或 API 自动化。
+Agent Bridge is a set of Markdown templates for passing work between planning, execution, and review roles while keeping a human in control. It does not require autonomous agents or API integration. / Agent Bridge 是一组 Markdown 模板，用于在规划、执行和审查角色之间传递工作，同时由人工保持控制。它不需要自主智能体或 API 集成。
 
-## Roles / 角色
+## Files / 文件
 
-- ChatGPT is the architect and reviewer: it clarifies goals, scope, risks, and acceptance criteria. / ChatGPT 是架构师和审查者：明确目标、范围、风险和验收标准。
-- Codex is the local executor: it inspects, plans, modifies approved files, verifies, and reports. / Codex 是本地执行者：检查、计划、修改已批准文件、验证并报告。
-- The User is the final approver: the User authorizes risk, accepts results, and decides whether to commit. / 用户是最终批准者：授权风险、接受结果并决定是否提交。
+- `task-template.md`: goal, scope, permissions, checks, and stop conditions. / 目标、范围、权限、检查和停止条件。
+- `result-template.md`: changes, evidence, risks, and next step. / 变更、证据、风险和下一步。
+- `review-template.md`: acceptance and release decision. / 验收和发布决定。
+- `safety-policy.md`, `cost-policy.md`, `execution-policy.md`: reusable operating boundaries. / 可复用的安全、成本和执行边界。
 
-## Included files / 包含文件
-
-- `task-template.md`: defines goals, scope, allowed files, checks, and stop conditions. / 定义目标、范围、允许文件、检查和停止条件。
-- `result-template.md`: provides a fixed Codex execution report. / 提供固定的 Codex 执行报告。
-- `review-template.md`: supports human or ChatGPT review. / 支持用户或 ChatGPT 审查。
-- `safety-policy.md`: defines safe defaults and approval requirements. / 定义安全默认值和审批要求。
-- `cost-policy.md`: keeps zero extra API cost as the default. / 将零额外 API 成本设为默认值。
-- `execution-policy.md`: defines the inspect, modify, verify, report, and review sequence. / 定义检查、修改、验证、报告和审查顺序。
-
-Use these documents as reusable starting points. Adapt only the project-specific scope; keep safety and human approval explicit. / 将这些文档作为可复用起点。只调整项目专属范围，并始终明确安全边界与人工审批。
+Adapt the templates to each project; keep approvals and evidence explicit. / 根据项目调整模板，并明确记录批准与证据。

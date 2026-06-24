@@ -1,24 +1,5 @@
-# AI_WORKSPACE Public Template / 公开模板版
+# Legacy Preview (optional reference) / 旧版预览（可选参考）
 
-## What is this?
-A minimal, local-first AI workflow template.
+A public-safe, local-first toolkit for scoped tasks, execution reports, and human review. / 一个公开安全、本地优先的工具包，用于范围明确的任务、执行报告和人工审查。
 
-## 这是什么？
-一个最小化、本地优先的 AI 工作流模板。
-
----
-
-## Includes / 包含内容
-- Task structure / 任务结构
-- Agent bridge concept / Agent 桥接概念
-- Git workflow / Git 工作流
-- Codex execution pattern / Codex 执行模式
-
----
-
-## Does NOT include / 不包含
-- memory system / 记忆系统
-- private logs / 私有日志
-- backups / 备份
-- tokens or secrets / token 或密钥
-- personal workspace data / 个人工作数据
+Start with `README.md`. No private data, credentials, logs, or backups are included. / 从 `README.md` 开始。本模板不包含私人数据、凭据、日志或备份。
