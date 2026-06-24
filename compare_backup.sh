@@ -6,11 +6,11 @@ BACKUP_DIR="$HOME/AI_WORKSPACE/backups"
 TMP_DIR="/tmp/AI_WORKSPACE_backup_check"
 
 shopt -s nullglob
-BACKUPS=("$BACKUP_DIR"/AI_WORKSPACE_v0.1.5_clean_*.tar.gz)
+BACKUPS=("$BACKUP_DIR"/AI_WORKSPACE_v0.1.6_clean_*.tar.gz)
 shopt -u nullglob
 
 if (( ${#BACKUPS[@]} == 0 )); then
-    echo "Error: no v0.1.5 clean backup found in $BACKUP_DIR." >&2
+    echo "Error: no v0.1.6 clean backup found in $BACKUP_DIR." >&2
     exit 1
 fi
 
@@ -30,7 +30,7 @@ rm -rf -- "$TMP_DIR"
 mkdir -p -- "$TMP_DIR"
 
 echo
-echo "## 1. Extract selected v0.1.5 clean backup"
+echo "## 1. Extract selected v0.1.6 clean backup"
 tar -xzf "$LATEST_BACKUP" -C "$TMP_DIR"
 
 DIFF_FOUND=0
@@ -80,6 +80,22 @@ compare_file 6 "CODEX_RULES.md" \
     "$TMP_DIR/AI_WORKSPACE/docs/CODEX_RULES.md"
 
 compare_file 7 "AGENTS.md" "$HOME/AI_WORKSPACE/AGENTS.md" "$TMP_DIR/AI_WORKSPACE/AGENTS.md"
+
+compare_file 8 "README.md" \
+    "$HOME/AI_WORKSPACE/README.md" \
+    "$TMP_DIR/AI_WORKSPACE/README.md"
+
+compare_file 9 "naming-and-docs-style.md" \
+    "$HOME/AI_WORKSPACE/docs/naming-and-docs-style.md" \
+    "$TMP_DIR/AI_WORKSPACE/docs/naming-and-docs-style.md"
+
+compare_file 10 "project-history.md" \
+    "$HOME/AI_WORKSPACE/docs/project-history.md" \
+    "$TMP_DIR/AI_WORKSPACE/docs/project-history.md"
+
+compare_file 11 "system-guide.md" \
+    "$HOME/AI_WORKSPACE/docs/system-guide.md" \
+    "$TMP_DIR/AI_WORKSPACE/docs/system-guide.md"
 
 echo
 echo "===== COMPARE COMPLETE ====="
