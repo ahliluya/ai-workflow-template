@@ -1,0 +1,110 @@
+# ==============================
+# AI_WORKSPACE .gitignore
+# Created: 2026-06-24
+# Purpose:
+# Prevent private memory, backups, logs, local runtime data,
+# credentials, and generated artifacts from being committed.
+# ==============================
+
+# ---- Private memory and inbox ----
+memory/
+inbox/
+outbox/
+
+# ---- Backups and archives ----
+backups/
+archive/
+*.tar
+*.tar.gz
+*.zip
+*.7z
+*.rar
+*.bak
+*.backup
+*.sha256
+
+# ---- Runtime state and sync logs ----
+sync_engine/state/
+sync_engine/logs/
+logs/
+monitor_logs/
+*.log
+*.tmp
+*.temp
+*.pid
+*.lock
+
+# ---- AI engine generated outputs ----
+ai_engine/**/cache/
+ai_engine/**/__pycache__/
+ai_engine/**/*.pyc
+ai_engine/abstraction/concept_model.md
+
+# ---- Local reports and generated documents ----
+*.docx
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# ---- Secrets and environment files ----
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*.token
+secrets/
+credentials/
+config/private/
+openai_api_key*
+api_key*
+
+# ---- Codex / local tool runtime ----
+.codex/
+codex_session*
+codex_last_report.md
+
+# ---- System/editor noise ----
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# ---- Python / Node / general build artifacts ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+dist/
+build/
+
+# ---- Keep these important project files trackable ----
+!.gitignore
+!AGENTS.md
+!capture.sh
+!daily_review.sh
+!compare_backup.sh
+!docs/
+!docs/*.md
+!status/
+!status/*.md
+!sync_engine/
+!sync_engine/**/*.sh
+!ai_engine/
+!ai_engine/**/*.sh
+!ai_engine/**/*.py
+
+# ---- Chat exports / local chat backup helpers ----
+chat_logs/
+save_chat.sh
+save_chat_now.sh
+save_chat_oneclick.sh
+
+# ---- AI engine generated memory / reasoning artifacts ----
+ai_engine/clean/*.md
