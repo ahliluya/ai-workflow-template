@@ -8,7 +8,7 @@ AI_WORKSPACE is a local-first personal AI memory and backup system.
 
 Current version:
 
-v0.1.6-git-baseline-docs-polish
+v0.2.0-agent-bridge-lite
 
 ## Required First Step
 
@@ -78,6 +78,16 @@ Use this report format:
 - Verification
 - Remaining risks
 - Next step
+
+## Agent Bridge Lite Rules / 轻量级 Agent 桥接规则
+
+For structured tasks, Codex should use `agent_bridge/task-template.md` to confirm task input and `agent_bridge/result-template.md` for the final execution report when appropriate.
+
+对于结构化任务，Codex 应在适当情况下使用 `agent_bridge/task-template.md` 确认任务输入，并使用 `agent_bridge/result-template.md` 输出最终执行报告。
+
+Codex must also respect the review, safety, cost, and execution policies in `agent_bridge/`. Agent Bridge Lite does not authorize API usage, background agents, automatic loops, or work outside the approved scope.
+
+Codex 还必须遵守 `agent_bridge/` 中的审查、安全、成本和执行策略。Agent Bridge Lite 不授权使用 API、后台智能体、自动循环或超出批准范围的工作。
 
 ## Core Commands
 

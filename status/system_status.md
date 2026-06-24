@@ -1,7 +1,7 @@
 # AI_WORKSPACE System Status
 
 ## Current Version
-v0.1.6-git-baseline-docs-polish
+v0.2.0-agent-bridge-lite
 
 ## Current Stage
 V3 + V4.6 completed.
@@ -11,8 +11,9 @@ Codex rules patch completed.
 Compare backup fix completed.
 AGENTS.md project instruction patch completed.
 Bilingual Git baseline documentation polish completed.
+Agent Bridge Lite baseline completed.
 
-v0.1.6 focuses on bilingual documentation, searchable naming, GitHub readiness, and public-template preparation.
+v0.2.0 introduces agent_bridge Lite for structured human-ChatGPT-Codex collaboration without extra API cost.
 
 ## V3 Status
 - capture writes to inbox
@@ -44,6 +45,8 @@ v0.1.6 focuses on bilingual documentation, searchable naming, GitHub readiness, 
 - README.md provides a bilingual project entry point
 - English-first naming, project history, and system guide documents exist
 - Public-template privacy rules are documented
+- Agent Bridge Lite task, result, and review templates exist
+- Agent Bridge Lite safety, cost, and execution policies exist
 
 ## Codex Agent Status
 - Codex execution rules created
@@ -61,6 +64,8 @@ v0.1.6 focuses on bilingual documentation, searchable naming, GitHub readiness, 
 - Personal AI Memory Layer
 
 ## Patch Notes
+- Added the v0.2.0 Agent Bridge Lite local collaboration baseline.
+- Added structured task input, fixed Codex reporting, human review, safety, cost, and execution policies without API automation.
 - Added the v0.1.6 bilingual documentation baseline with searchable English-first filenames.
 - Added Git and privacy guidance for private backup and future public-template preparation.
 - Preserved the existing Chinese system guide for compatibility and historical detail.
@@ -72,4 +77,4 @@ v0.1.6 focuses on bilingual documentation, searchable naming, GitHub readiness, 
 - Added strict error handling and non-zero exits for errors or differences.
 
 ## Next Possible Step
-Review tracked files and .gitignore before configuring a private GitHub remote or preparing a public template.
+Review the Agent Bridge Lite documents and verification results before approving a commit.

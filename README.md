@@ -28,6 +28,7 @@ AI_WORKSPACE/
 ├── compare_backup.sh          # 备份对比入口
 ├── ai_engine/                 # 规则型 AI 处理管线
 ├── sync_engine/               # trigger、queue、batch 增量同步
+├── agent_bridge/              # 轻量级任务、结果、审查、安全与成本策略
 ├── docs/                      # 规则、命令和双语说明
 ├── status/                    # 当前版本与系统状态
 ├── inbox/                     # 私人原始输入，不应公开
@@ -66,6 +67,14 @@ bash ~/AI_WORKSPACE/ai_engine/run_ai_engine.sh
 
 更多 Ubuntu command guide / Ubuntu 命令说明见 `docs/COMMANDS.md` 和 `docs/system-guide.md`。
 
+## Agent Bridge Lite / 轻量级 Agent 桥接层
+
+v0.2.0 introduces Agent Bridge Lite, a zero-extra-cost local bridge layer for structured collaboration between the user, ChatGPT, Codex, and AI_WORKSPACE. It provides reusable task, result, and review templates plus execution, safety, and cost policies without OpenAI API automation or background agents.
+
+v0.2.0 引入 Agent Bridge Lite：一个零额外成本的本地桥接层，用于规范用户、ChatGPT、Codex 与 AI_WORKSPACE 的结构化协作。它提供可复用的任务、结果和审查模板，以及执行、安全和成本策略，不使用 OpenAI API 自动化或后台智能体。
+
+See `agent_bridge/README.md` for the workflow and boundaries. / 工作流与边界详见 `agent_bridge/README.md`。
+
 ## Safety Boundaries / 安全边界
 
 - 默认只在 `~/AI_WORKSPACE` 内工作。
@@ -77,9 +86,9 @@ bash ~/AI_WORKSPACE/ai_engine/run_ai_engine.sh
 
 ## Version Status / 当前版本
 
-当前文档基线：`v0.1.6-git-baseline-docs-polish`
+当前文档基线：`v0.2.0-agent-bridge-lite`
 
-当前 Git baseline commit：`2d459d0`。该提交是 v0.1.5 安全模板的初始基线；v0.1.6 在其上完善双语文档、可检索命名、GitHub readiness 和 public-template preparation。
+当前 Git baseline commit：`2d459d0`。该提交是 v0.1.5 安全模板的初始基线；后续版本在其上完善双语文档，并于 v0.2.0 加入 Agent Bridge Lite 本地协作层。
 
 ## Git and Privacy Notes / Git 与隐私说明
 

@@ -1,13 +1,13 @@
 # AI_WORKSPACE Version
 
 ## Version
-v0.1.6-git-baseline-docs-polish
+v0.2.0-agent-bridge-lite
 
 ## Date
 2026-06-24
 
 ## Status
-Stable Git baseline documentation polish completed with bilingual, searchable, privacy-aware project guides.
+Agent Bridge Lite baseline completed with bilingual, privacy-aware task, result, review, safety, cost, and execution policies.
 
 ## Core Commands
 - capture "内容"
@@ -37,8 +37,14 @@ Stable Git baseline documentation polish completed with bilingual, searchable, p
 - bilingual README and English-first documentation baseline
 - searchable project history, naming guide, and system guide
 - GitHub readiness and public-template privacy guidance
+- Agent Bridge Lite task, result, and review templates
+- Agent Bridge Lite safety, cost, and execution policies
+- zero-extra-cost human–ChatGPT–Codex collaboration baseline
 
 ## Patch Notes
+- Added `agent_bridge/` with seven bilingual, privacy-safe documents.
+- Standardized task input, Codex reports, review decisions, execution boundaries, safety rules, and cost rules.
+- Kept the bridge local and manual with no OpenAI API automation, API keys, automatic loops, or background agents.
 - Added README.md with bilingual overview, commands, safety boundaries, Git privacy notes, and roadmap.
 - Added English-first bilingual naming, history, and system documentation.
 - Added documentation naming and privacy rules to AGENTS.md and CODEX_RULES.md.
@@ -52,4 +58,4 @@ Stable Git baseline documentation polish completed with bilingual, searchable, p
 - Added non-zero exits for extraction errors and real differences.
 
 ## Next Upgrade Direction
-Review tracked files and .gitignore before configuring a private GitHub remote or preparing a public template.
+Review the Agent Bridge Lite baseline, then commit only after explicit approval. Consider full agent-to-agent capabilities only with separate privacy, safety, and cost review.

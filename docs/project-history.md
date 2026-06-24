@@ -51,3 +51,11 @@
 建立 English-first filenames 与 bilingual titles 的文档基线，新增项目 README、命名规范、项目历史和系统说明，并补充 Git privacy 与 public-template rules。
 
 重要性：提高项目可搜索性、可扫描性与 GitHub readiness，为 solo AI company 和后续 agent-to-agent 工作流扩展准备清晰入口。
+
+## v0.2.0-agent-bridge-lite
+
+Introduced `agent_bridge/` as a zero-extra-cost local bridge layer with bilingual task, Codex result, review, safety, cost, and execution templates and policies. It standardizes human–ChatGPT–Codex collaboration without OpenAI API automation, automatic loops, or background agents.
+
+新增 `agent_bridge/` 零额外成本本地桥接层，提供双语任务、Codex 结果、审查、安全、成本和执行模板与策略。该版本在不使用 OpenAI API 自动化、自动循环或后台智能体的前提下，规范用户、ChatGPT 与 Codex 的协作。
+
+重要性：为 agent bridge、agent-to-agent lite 和 solo AI company 工作流建立可审查、隐私安全且成本可控的本地基线，同时保留用户最终审批权。
