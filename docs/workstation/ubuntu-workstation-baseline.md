@@ -16,3 +16,11 @@ AI_WORKSPACE standard path:
 - npm: 11.16.0
 - Source: NodeSource node_24.x
 - Status: keep for now; do not downgrade unless compatibility issues appear.
+
+## Docker Toolchain
+
+- Docker Engine: 29.6.0
+- Docker Compose: v5.2.0
+- Docker Hub pull: verified with hello-world
+- Docker permission: user added to docker group
+- Network note: Docker daemon uses local proxy when Docker Hub IPv6 timeout occurs.
